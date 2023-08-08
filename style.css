@@ -1,0 +1,95 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* hero */
+.hero-image{
+    text-align: center;    
+}
+
+.hero-text{
+    display: inline-block;
+    text-align: left;
+    margin-top: 3rem;
+    color: white;
+}
+
+.first-line p,h1 {
+    display: inline;
+}
+
+.hero-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("./images/hero-image.jpg");
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* black box */
+
+.black-box{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+
+.black-box span{
+    font-size: 25px;
+}
+
+.black-box h2{
+    font-size: 18px;
+    margin: 0;
+}
+
+/* card */
+
+#card-container .card{
+    margin: 1rem auto;
+}
+
+/* bottom box */
+
+#bottom .box{
+    padding: 1rem 2rem;
+    color: white;
+}
+ .box h3{
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .box p{
+    font-size: 16px;
+ }
+
+ .contact{
+    background-color: #4D5F00;
+ }
+
+ .about{
+    background-color: #761C00;
+ }
+
+ @media screen and (max-width:766px) {
+    .hero-image{
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width:767px) {
+    #bottom{
+    display: flex;
+    }
+
+    .contact,.about{
+        width: 80%;
+        margin: 1rem 2rem;
+        justify-content: space-between;
+    }
+}
